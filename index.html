@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalo Morales - Personal Bio</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--bg-secondary);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        .bio-section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .highlights {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        .highlights li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .highlights li::before {
+            content: '\2192';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .social-links {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lalo Morales</h1>
+            <div class="subtitle">Technology Enthusiast & Developer</div>
+        </header>
+
+        <section class="bio-section">
+            <h2>About Me</h2>
+            <p>As a passionate technology enthusiast, I'm constantly exploring new ways to innovate and create. With a keen interest in web development and artificial intelligence, I enjoy pushing the boundaries of what's possible in the digital realm.</p>
+        </section>
+
+        <section class="bio-section">
+            <h2>Highlights</h2>
+            <ul class="highlights">
+                <li>Experimenting with cutting-edge AI technologies like Claude and MCP</li>
+                <li>Building web applications and exploring modern development stacks</li>
+                <li>Learning and adapting to new technologies in the ever-evolving tech landscape</li>
+                <li>Passionate about creating intuitive and user-friendly digital experiences</li>
+            </ul>
+        </section>
+
+        <div class="social-links">
+            <a href="https://github.com/lalomorales22" target="_blank">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
